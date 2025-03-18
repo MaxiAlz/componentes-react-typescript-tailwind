@@ -10,7 +10,7 @@ const AppLayout = ({ children, pageTitle }: LayoutProps) => {
   const [isCollapsed, setIsCollapsed] = useState(true);
 
   useEffect(() => {
-    document.title = `${pageTitle}| SFV Catamarca `;
+    document.title = `${pageTitle}| COMPONENTES MAXI `;
 
     return () => {
       document.title = 'SFV Catamarca';

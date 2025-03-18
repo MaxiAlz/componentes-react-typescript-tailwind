@@ -1,4 +1,5 @@
-import { CardButtons } from '../../components/Buttons';
+import { IoDocumentSharp } from 'react-icons/io5';
+import { CardButtons, FilledStuffCard } from '../../components/Buttons';
 import { AppLayout } from '../../layouts/AppLayout';
 
 const ButtonsView = () => {
@@ -12,10 +13,11 @@ const ButtonsView = () => {
             label='Ingresar con AFIP'
             description='Para comenzar tu trámite necesitas Iniciar Sesión en AFIP con clave Fiscal nivel 2 o superior'
           />
-          <CardButtons
-            onClick={() => {}}
-            label='Consulta tu trámite'
-            description='Ingresa los datos de tu trámite, haz solicitudes, consulta su estado y solicita revisiones.'
+          <FilledStuffCard
+            // onClick={() => {}}
+            title='Consulta tu trámite'
+            color='primary'
+            icon={IoDocumentSharp}
           />
         </div>
       </section>
