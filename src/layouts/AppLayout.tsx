@@ -22,7 +22,9 @@ const AppLayout = ({ children, pageTitle }: LayoutProps) => {
       <AppSidebar isCollapsed={isCollapsed} setIsCollapsed={setIsCollapsed} />
       <div className='flex flex-1 flex-col'>
         <AppNavbar />
-        <main className='flex-1 dark:bg-black'>{children}</main>
+        <main className='flex-1 overflow-auto px-10 pt-5 dark:bg-black'>
+          {children}
+        </main>
       </div>
     </div>
   );

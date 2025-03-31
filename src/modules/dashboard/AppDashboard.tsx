@@ -4,11 +4,12 @@ import { AppLayout } from '../../layouts/AppLayout';
 
 import { LiaCarSolid } from 'react-icons/lia';
 import { IoDocumentTextOutline } from 'react-icons/io5';
+import { EntriesTable } from '../../components/Tables';
 
 const AppDashboard = () => {
   return (
     <AppLayout pageTitle='Dashboard'>
-      <div className='m-5 grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-6 xl:grid-cols-4 2xl:gap-7.5'>
+      <div className='mb-5 grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-6 xl:grid-cols-4 2xl:gap-7.5'>
         <StatsData
           title='Vehiculos totales'
           key={'Total de Vehiculos'}
@@ -34,6 +35,11 @@ const AppDashboard = () => {
           icon={MdPersonOutline}
         />
       </div>
+      <EntriesTable
+        title='Ingresos recientes'
+        buttonLabel='Ir al panel de Ingresos'
+        onClick={() => {}}
+      />
     </AppLayout>
   );
 };
