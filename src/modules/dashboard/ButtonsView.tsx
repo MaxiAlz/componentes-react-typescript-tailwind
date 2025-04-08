@@ -1,6 +1,7 @@
 import { IoDocumentSharp } from 'react-icons/io5';
 import { CardButtons, FilledStuffCard } from '../../components/Buttons';
 import { AppLayout } from '../../layouts/AppLayout';
+import { ImgModalUploader } from '../../components/Inputs';
 
 const ButtonsView = () => {
   return (
@@ -24,6 +25,10 @@ const ButtonsView = () => {
               color='warning'
               icon={IoDocumentSharp}
             />
+          </div>
+          <div>
+            <p>ImgModalUploader</p>
+            <ImgModalUploader limit={5} />
           </div>
         </div>
       </section>
